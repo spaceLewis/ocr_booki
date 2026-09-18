@@ -151,15 +151,24 @@ a {
     background-color: #0051cc;
 }
 
+/* Filter Form */
+
+.filter-container {
+    display: flex; 
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-container p {
+    font-weight: 700;
+}
+
 .filter-form {
     display: flex;
     align-items: center;
     gap: 15px;
-}
-
-.filter-form p {
-    margin: 0;
-    font-weight: 700;
 }
 
 .filter-form input[type="radio"] {
