@@ -12,14 +12,58 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/logo/favicon.ico">
 </head>
 
 <body>
     <div class="main-container">
-        <header></header>
+        <header>
+            <div class="header-content">
+                <a href="./index.html" class="logo">
+                    <img class="logo-img" src="./images/logo/Booki.png" alt="Logo de Booki">
+                </a>
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="#hebergements">Hébergements</a></li>
+                        <li><a href="#activites">Activités</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <main>
+            <div class="recherche-container">
+                <section class="recherche">
+                    <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre-ville ou en pleine nature.</p>
+                    <form class="search">
+                        <span class="location-icon-wrapper">
+                            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        </span>
+                        <input class="search-input form-field" type="text" placeholder="Marseille, France">
+                        <button class="search-button form-field" type="submit">Rechercher</button>
+                    </form>
+                </section>
+                <section class="filter-container" id="filter">
+                    <form class="filter-form">
+                        <p>Filtres :</p>
+                        <input type="radio" id="filter-economic" name="filter" value="economic">
+                        <label for="filter-economic"><i class="fa-solid fa-money-bill" aria-hidden="true"></i> Economique</label>
+                        <input type="radio" id="filter-family" name="filter" value="family">
+                        <label for="filter-family"><i class="fa-solid fa-users" aria-hidden="true"></i> Famille</label>
+                        <input type="radio" id="filter-romantique" name="filter" value="romantique">
+                        <label for="filter-romantique"><i class="fa-solid fa-heart" aria-hidden="true"></i> Romantique</label>
+                        <input type="radio" id="filter-favorite" name="filter" value="favorite">
+                        <label for="filter-favorite"><i class="fa-solid fa-fire" aria-hidden="true"></i> Nos pépites</label>
+                        <button type="submit" hidden>Filtrer</button>
+                    </form>
+                </section>
+                <section class="info-container">    
+                    <i class="fa-solid fa-info info-icon" aria-hidden="true"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </section>
+            </div>
             <div class="hebergements-and-populaires">
-                <section class="hebergements">
+                <section class="hebergements" id="hebergements">
 
                 </section>
                 <section class="populaires">
@@ -86,6 +130,11 @@
                             </article>
                         </a>
                     </div>
+                </section>
+            </div>
+            <div class="activites" id="activites">
+                <section class="activites">
+                    <h2 class="section-title">Activités</h2>
                 </section>
             </div>
         </main>
