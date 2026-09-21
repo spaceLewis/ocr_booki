@@ -278,6 +278,12 @@ a {
     margin-left: 10px;
 }
 
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /****** Hebergements Cards ***********/
 
 .hebergements-cards {
