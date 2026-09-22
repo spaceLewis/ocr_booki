@@ -393,6 +393,7 @@ a {
 
 .activites-cards .card-title {
     margin-top: 10px;
+    padding-left: 10px;
 }
 
 .activites-cards .card-content {
@@ -433,6 +434,7 @@ a {
 
 .footer-article a:hover {
     text-decoration: underline;
+    color: var(--main-color);
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -470,6 +472,36 @@ a {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activites-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .activites-cards .card {
+        display: flex;
+        flex: 1;
+        height: 260px;
+    }
+
+    .activites-cards img {
+        height: 193.5px;
+        width: 100%;
+    }
+
+    .activites-cards .card-content {
+        display: flex;
+        flex: 1;
+        align-items: center;
+    }
+
+    .activites-cards h3 {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
