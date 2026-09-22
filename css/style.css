@@ -399,6 +399,42 @@ a {
     width: 100%;
 }
 
+/****** Footer ***********/
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+    color: black;
+}
+
+.footer-article {
+    flex: 1; /* Each footer article takes equal space */
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer-article h4 {
+    margin-bottom: 10px;
+}
+
+.footer-article p {
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.footer-article a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-article a:hover {
+    text-decoration: underline;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
