@@ -518,6 +518,15 @@ a {
         padding-right: 40px;
     }
 
+    .section-title {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .card-title {
+        font-size: 18px !important;
+    }
+
     .logo-img {
         height: auto;
         width: 6rem;
