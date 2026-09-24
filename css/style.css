@@ -507,15 +507,61 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+    .main-container {
+        padding: 0px;
+    }
+
+    main {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     .logo-img {
         height: auto;
-        width: 4rem;
+        width: 6rem;
         padding: 5px;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: auto;
+    }
+
+    .header-content nav {
+        width: 100%;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-list li {
+        flex: 1;
     }
 
     .nav-list a {
         border-top : none;
         border-bottom: 3px solid transparent;
+        width: 100%;
+        font-size: 20px;
     }
 
     .nav-list a:hover,
@@ -527,25 +573,34 @@ a {
     .recherche-container {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        gap: 1px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .search-input {
+        flex: 1;
+        min-width: 0;
     }
 
     .filter-container {
         display: flex; 
         flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        align-content: stretch;
+        gap: 1px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     .filter-form {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 0;
     }
 
     .filter-form label {
@@ -567,13 +622,21 @@ a {
         flex-direction: column;
     }
 
+    .hebergements-and-populaires section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
     .populaires {
         order: 1;
+        margin-top: 20px;
     }
 
     .hebergements {
         order: 2;
-        margin-top: 33px;
+        margin-top: 20px;
     }
 
     .hebergements-cards a,
@@ -630,5 +693,18 @@ a {
         display: flex;
         flex-direction: column;
         padding-left: 30px;
+    }
+}
+
+@media (max-width: 359.98px) {
+    .filter-form {
+        gap: 8px;
+    }
+
+    .filter-form label {
+        flex-basis: calc((100% - 8px) / 2);
+        gap: 6px;
+        padding-inline: 8px;
+        font-size: 14px;
     }
 }
