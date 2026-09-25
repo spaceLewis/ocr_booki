@@ -146,6 +146,10 @@ a {
     text-align: center;
 }
 
+.search-icon-wrapper {
+    display: none;
+}
+
 .search-button:hover,
 .search-button:focus {
     background-color: #0051cc;
@@ -594,6 +598,20 @@ a {
     .search-input {
         flex: 1;
         min-width: 0;
+    }
+
+    .search-text-wrapper {
+        display: none;
+    }
+
+    .search-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-icon-wrapper .fa-magnifying-glass {
+        color: white;
     }
 
     .filter-container {
