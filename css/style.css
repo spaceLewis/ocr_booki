@@ -518,8 +518,8 @@ a {
     main {
         padding-top: 1px;
         padding-bottom: 1px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .section-title {
@@ -591,6 +591,17 @@ a {
         margin-bottom: 1px;
     }
 
+    .recherche-container p {
+        font-size: 18px !important;
+    }
+
+    .info-icon {
+        font-size: 18px !important;
+        height: 30px;
+        width: 30px;
+        border: 3px solid var(--main-bg-color);
+    }
+
     .search {
         width: 100%;
     }
@@ -623,6 +634,10 @@ a {
         margin-bottom: 10px;
     }
 
+    .filter-container p {
+        font-size: 20px !important;
+    }
+
     .filter-form {
         display: flex;
         flex-direction: row;
@@ -645,6 +660,11 @@ a {
         margin-top: 0px;
     }
 
+    .recherche-container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -652,24 +672,37 @@ a {
     .hebergements-and-populaires section {
         display: flex;
         flex-direction: column;
-        padding-top: 10px;
+        padding-top: 30px;
         margin-top: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    body {
+        margin: 0;
     }
 
     .populaires {
         order: 1;
-        margin-top: 20px;
+        background-color: var(--main-bg-color);
+        border-radius: 0 !important;
     }
 
     .hebergements {
         order: 2;
         margin-top: 20px;
+        background: none !important;
     }
 
     .hebergements-cards a,
     .populaires-cards a {
         flex: 1;
         width: 100%;
+    }
+
+    .hebergements-cards .card-subtitle,
+    .populaires-cards .card-subtitle {
+        font-size: 18px;
     }
 
     .hebergements-cards img {
@@ -682,7 +715,13 @@ a {
         display: flex;
         flex-direction: column;
         align-items: stretch;
-        margin-left: 10px;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+        margin-top: 10px !important;
+        margin-bottom: 30px !important;
+        width: auto;
     }
 
     .activites-title {
