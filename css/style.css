@@ -223,7 +223,7 @@ a {
     width: 20px !important;
     height: 20px !important;
     border: 1px solid var(--main-bg-color);
-    border-radius: 50%;
+    border-radius: 50%; /* make the icon circular */
     font-size: 10px;
 }
 
@@ -416,11 +416,11 @@ a {
 }
 
 .footer-article {
-    flex: 1; /* Each footer article takes equal space */
-    margin: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex: 1; /* Each footer article takes equal space */
+    margin: 0 10px;
 }
 
 .footer-article h4 {
