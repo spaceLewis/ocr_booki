@@ -72,7 +72,7 @@
                 <a href="./index.html" class="logo">
                     <img class="logo-img" src="./images/logo/Booki.png" alt="Booki - Réservez votre hébergement">
                 </a>
-                <nav>
+                <nav aria-label="Navigation principale">
                     <ul class="nav-list">
                         <li><a href="#hebergements">Hébergements</a></li>
                         <li><a href="#activites">Activités</a></li>
@@ -90,7 +90,7 @@
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         </span>
                         <label for="search-location" class="sr-only">Entrez votre destination</label>
-                        <input id="search-location" class="search-input form-field" type="text" placeholder="Marseille, France" required>
+                        <input id="search-location" class="search-input form-field" type="text" name="destination" placeholder="Marseille, France" required>
                         <button class="search-button form-field" type="submit" aria-label="Rechercher des hébergements">
                             <span class="search-text-wrapper">
                                 Rechercher
@@ -101,9 +101,9 @@
                         </button>
                     </form>
                 </section>
-                <div class="filter-container" id="filter">
-                    <p>Filtres</p>
-                    <form class="filter-form">
+                <div class="filter-container" id="filter" role="region" aria-labelledby="filter-title">
+                    <p id="filter-title">Filtres</p>
+                    <form class="filter-form" aria-label="Filtrer les hébergements">
                         <input type="radio" id="filter-economic" name="filter" value="economic">
                         <label for="filter-economic"><i class="fa-solid fa-money-bill" aria-hidden="true"></i> Economique</label>
                         <input type="radio" id="filter-family" name="filter" value="family">
