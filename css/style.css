@@ -75,6 +75,21 @@ a {
     outline-offset: 3px;
 }
 
+/* Remove default focus outline for cards within specific sections */
+.hebergements-cards > a:focus-visible,
+.populaires-cards > a:focus-visible,
+.activites-cards > a:focus-visible {
+    outline: none;
+}
+
+/* Apply custom focus outline for cards within specific sections */
+.hebergements-cards > a:focus-visible .card,
+.populaires-cards > a:focus-visible .card,
+.activites-cards > a:focus-visible .card {
+    outline: 3px solid var(--main-color);
+    outline-offset: 3px;
+} 
+
 /* Skip link : allows users to skip directly to the main content for better accessibility */
 .skip-link {
     position: absolute;
