@@ -69,6 +69,29 @@ a {
     text-decoration: none;
 }
 
+/* Focus visible outline : provides a visible outline for elements when they receive keyboard focus */
+:focus-visible {
+    outline: 3px solid var(--main-color);
+    outline-offset: 3px;
+}
+
+/* Skip link : allows users to skip directly to the main content for better accessibility */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    transform: translateY(-100%);
+}
+
+/* Skip link focus : makes the skip link visible when it receives keyboard focus */
+.skip-link:focus {
+    transform: translateY(0);
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
