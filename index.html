@@ -66,6 +66,7 @@
 </head>
 
 <body>
+    <!-- Raccourci clavier vers le contenu principal. -->
     <a class="skip-link" href="#main-content">Aller au contenu principal</a>
     <div class="main-container">
         <header>
@@ -81,6 +82,7 @@
                 </nav>
             </div>
         </header>
+        <!-- tabindex="-1" permet au lien d'évitement de placer le focus ici. -->
         <main id="main-content" tabindex="-1">
             <div class="recherche-container">
                 <section class="recherche">
@@ -90,6 +92,7 @@
                         <span class="location-icon-wrapper">
                             <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                         </span>
+                        <!-- Le libellé reste accessible sans être affiché à côté du placeholder. -->
                         <label for="search-location" class="sr-only">Entrez votre destination</label>
                         <input id="search-location" class="search-input form-field" type="text" name="destination" placeholder="Marseille, France" required>
                         <button class="search-button form-field" type="submit" aria-label="Rechercher des hébergements">
@@ -103,6 +106,7 @@
                     </form>
                 </section>
                 <div class="filter-container" id="filter">
+                    <!-- Intitulé visuel ; le legend masqué nomme le groupe pour les lecteurs d'écran. -->
                     <span class="filter-title" aria-hidden="true">Filtres</span>
                     <form class="filter-form" aria-label="Filtrer les hébergements">
                         <fieldset>
