@@ -167,6 +167,12 @@ a {
     padding: 8px;
 }
 
+.form-field:focus, 
+.form-field:focus-visible { /* focus-visible : applies the styles only when the element receives focus via keyboard navigation */
+    outline: 2px solid var(--main-color);
+    outline-offset: -2px;
+}
+
 .location-icon-wrapper {
     display: flex;
     align-items: center;
@@ -262,7 +268,7 @@ a {
     border-color: var(--main-color);
 }
 
-.filter-form input[type="radio"]:focus-visible + label {
+.filter-form input[type="radio"]:focus-visible + label { /* focus-visible : applies the styles only when the element receives focus via keyboard navigation */
     outline: 2px solid var(--main-color);
     outline-offset: 2px;
 }
@@ -319,7 +325,7 @@ a {
     padding-left: 15px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
     justify-content: space-between;
 }
 
@@ -458,7 +464,7 @@ a {
     height: 380px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
 .activites-cards .card-title {
@@ -717,10 +723,10 @@ a {
     }
 
     .filter-form label {
-        flex-grow: 0;
-        flex-shrink: 0;
+        flex-grow: 0; /* no allow the label to grow beyond its content */
+        flex-shrink: 0; /* no shrink : it will maintain its intrinsic size */
         /*flex-basis: 45%;*/
-        flex-basis: calc((100% - 20px) / 2); /* Two items per row with 15px gap */
+        flex-basis: calc((100% - 10px) / 2); /* Two items per row with 10px gap */
         box-sizing: border-box;
     }
 
